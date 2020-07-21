@@ -100,7 +100,7 @@ Composite or reference data types are more complex and typically build on some o
 - ##### Object
 
   - objects are made up of some kind of key/value pair.
-  - a key must be either a string or a number
+  - a `key` must be either a string or a number
     - most commonly keys are of type string, and will be referenced without any quotation marks
     ```javascript
     var someObject = {
@@ -109,15 +109,75 @@ Composite or reference data types are more complex and typically build on some o
       2: "numbers can also be keys",
     };
     ```
+  - a `value` can be of ANY type
+    - if a value is a function, then that `key` is referred to as a `method`
+    ```javascript
+    var someObject = {
+      stringKey: "A String Value",
+      numberKey: 5,
+      booleanKey: true,
+      undefinedKey: undefined,
+      nullKey: null,
+      arrayKey: [],
+      objectKey: {},
+      method: function () {},
+    };
+    ```
+
+- ##### Array
+
+  - arrays are collections of values
+  - these values can be of ANY type
+
+  ```javascript
+  var someArray = [
+    "a string",
+    5,
+    true,
+    undefined,
+    null,
+    [],
+    {},
+    function () {},
+  ];
+  ```
 
 - ##### Function
-- ##### Array
+
+  - a function is a block of code designed to perform a specific task
+  - a function is first `defined`, and must be invoked or called to execute the specified task/logic
+  - function is a reserved keyword for defining a function
+  - the function name can be anything you could name any other variable
+  - parameters are values that will be passed into the function, once the function has been invoked/called.
+    // these values are called parameters when the function is defined, but will be called arguments when the function is invoked
+
+  ```javascript
+  // defining a function called `sum` with 2 parameters `x` and `y`
+  function sum(x, y) {
+    return x + y;
+  }
+  // invoking the `sum` function with arguments where x=5 and y=6
+  var eleven; // variable `eleven` is currently `undefined`
+  eleven = sum(5, 6); // variable `eleven` is reassigned and should now have value of 11
+  ```
+
+  - functions either return a value, or do not.
+  - if a function does not return a value, it typically interacts with some other variable (like invoking another function)
+
+  ```javascript
+  function subtract(x, y) {
+    return x - y; // returns a new value of x - y
+  }
+  function subtractWithNoReturn(x, y) {
+    console.log(x - y); // just logs the value of x - y
+  }
+  ```
 
 > Fun/Stupid fact about composite data types
 > technically functions and arrays are `objects`.
-> In fact, technically all of prototypes
+> In fact, technically all prototypes
 > are objects... super confusing, right?
-> But, just like any other object, prototypes have properties and methods
+> But, just like any other object, prototypes have properties (keys) and methods
 
 ## Operators
 
