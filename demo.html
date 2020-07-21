@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="something"></div>
+  <input type="textarea" />
+  <script>
+    // if (18 == "18") { // true
+
+    // }
+    // ! // <- NOT operator, frequently called a bang, means the opposite
+    // !true === false
+    // && // AND operator
+    // if (18 === '18' && x > y) { }
+    // || // OR operator
+    // if (18 === '18' || x < y) {
+
+    // }
+    // if (18 === "18") { } //false
+    const someElem = document.querySelector('body > div')
+    const anotherElem = document.querySelector('input[type="text]"')
+    // let's talk about css selectors next time
+    var someObject = {
+      stringKey: "A String Value",
+      numberKey: 5,
+      booleanKey: true,
+      undefinedKey: undefined,
+      nullKey: null,
+      arrayKey: [],
+      objectKey: {},
+      method: function () { },
+    };
+    var keys = Object.keys(someObject) // [stringKey,numberKey,booleanKey,undefinedKey,nullKey,arrayKey,objectKey,method]
+    for (var i = 0; i < keys.length; i++) {
+    }
+  </script>
+</body>
+
+</html>

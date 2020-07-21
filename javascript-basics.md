@@ -11,7 +11,7 @@
 - Variables
 - Operators
 - Conditionals
-- Iterators/loops
+- Iterators
 
 ## Variables
 
@@ -184,9 +184,17 @@ Composite or reference data types are more complex and typically build on some o
 Operators allow us to perform operations on or between variables.
 
 ### Assigment Operators
-
+  - `=`
 ### Arithmetic Operators
 
 ### Comparison Operators
-
+  - `==`
+  - `===`
 ### Logical Operators
+  - `!`
+  - `!!`
+  - `||`
+  - `&&`
+
+## Conditionals
+## Iterators
